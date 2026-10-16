@@ -1,0 +1,14 @@
+FROM node:20-alpine
+
+WORKDIR /app
+
+# Install dependencies based on the preferred package manager
+COPY package.json package-lock.json* ./
+RUN npm ci
+
+COPY . .
+
+# Next.js uses port 3000 by default
+EXPOSE 3000
+
+CMD ["npm", "run", "dev"]

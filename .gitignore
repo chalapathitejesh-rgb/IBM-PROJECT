@@ -1,0 +1,63 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Next.js / Node
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+.npm
+*.log
+
+# Large Datasets & Archives (Keep repository lightweight)
+dataset/
+data/
+*.archive
+*.tar.gz
+*.zip
+*.tar
+/root/.cache/
+
+# Uploaded raw test files
+backend/app/uploads/deepfake/*.mp4
+backend/app/uploads/deepfake/*.avi
+backend/app/uploads/deepfake/*.mov
+backend/app/uploads/voice/*.wav
+backend/app/uploads/voice/*.mp3
+
+# Keep upload directories
+!backend/app/uploads/.gitkeep
+!backend/app/uploads/deepfake/.gitkeep
+!backend/app/uploads/voice/.gitkeep
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
